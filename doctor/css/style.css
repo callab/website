@@ -37,6 +37,10 @@ h2 {
     width: 100%;
     z-index: 99999;
 }
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
 .header-backup {
     width: 20px;
     height: 119px;
@@ -188,6 +192,8 @@ li a.active {
 /*about area*/
 
 .about h2 {
+    padding-top: 40px;
+    padding-bottom: 20px;
     font-size: 70px;
     color: #d55127;
     margin-top: 50px;
@@ -279,20 +285,21 @@ li a.active {
 
 .service {
     background: url(../img/pattern.jpg);
-    background-repeat: repeat-y;
+    background-repeat: repeat-yx;
     margin-top: 40px;
+    padding-bottom: 20px;
 }
 .service h2 {
     font-size: 90px;
     color: #fff;
-    margin-top: 70px;
-    margin-bottom: 0;
+    margin-top: 90px;
+    margin-bottom: 10px;
 }
 .service h4 {
     font-size: 24px;
     color: #fff;
     margin-top: 0;
-    margin-bottom: 70px;
+    margin-bottom: 20px;
     display: block;
 }
 .single-service-img {
@@ -398,16 +405,23 @@ li a.active {
     margin-top: 0;
     margin-bottom: 45px;
 }
+
 .single-member {
-    margin: 0;
+    margin-top: 0px;
     padding: 0;
+    width: 1000px;
+    height: 210px;
+    margin-left: 180px;
 }
 .person img {
-    width: 100%;
+    width: 80%;
 }
 .person-detail {
-    padding: 10px;
-    background: #3a9cc8;
+    padding: 0px;
+    background: #fff;
+    width: 60%;
+    height: 182px;
+    left: -65px;
     position: relative;
     transition: all .7s ease 0s;
     -webkit-transition: all .7s ease 0s;
@@ -437,14 +451,14 @@ li a.active {
     position: absolute;
     width: 20px;
     height: 20px;
-    background: #3ba0cc;
+    background: #fff;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
-    top: -9px;
-    left: 46%;
+    top: 43%;
+    left: -1%;
     transition: all .7s ease 0s;
     -webkit-transition: all .7s ease 0s;
     -moz-transition: all .7s ease 0s;
@@ -452,12 +466,18 @@ li a.active {
     -ms-transition: all .7s ease 0s;
 }
 .person-detail h3 {
+    margin: 10px;
     font-size: 30px;
-    color: #fff;
+    color: #737373;
+}
+.person-detail h4 {
+    font-size: 20px;
+    color: #737373;
 }
 .person-detail p {
+    margin: 10px;
     font-size: 13px;
-    color: #fff;
+    color: #737373;
     font-family: 'Open Sans', sans-serif;
 }
 .single-member:hover .person-detail {
@@ -481,6 +501,9 @@ li a.active {
 }
 .contact-info {
     padding-left: 40px;
+}
+.contact-info p {
+    font-size:;
 }
 .contact-info h3 {
     padding-left: 0;
@@ -542,6 +565,13 @@ li a.active {
 .info-detail {
     border-top: 1px solid #53cde5;
     padding-top: 15px;
+}
+.info-detail p{
+    padding: 0 !important;
+    margin: 0 !important;
+    position: relative;
+    left: 100px;
+    bottom: 40px;
 }
 .form {
     border-top: 1px solid #53cde5;
