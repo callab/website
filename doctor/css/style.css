@@ -48,8 +48,8 @@ h2 {
     margin: auto;
 }
 .top-header img.logo {
-    margin-bottom: 0px;
-    margin-top: 0px;
+    margin-bottom: 5px;
+    margin-top: 10px;
     transition: all .5s ease 0s;
     -webkit-transition: all .5s ease 0s;
     -moz-transition: all .5s ease 0s;
@@ -60,7 +60,7 @@ h2 {
     background-color: transparent;
     border-color: transparent;
     margin-bottom: 0;
-    margin-top: 8px;
+    margin-top: 12px;
     transition: all .5s ease 0s;
     -webkit-transition: all .5s ease 0s;
     -moz-transition: all .5s ease 0s;
@@ -68,7 +68,7 @@ h2 {
     -ms-transition: all .5s ease 0s;
 }
 .nav-bar {
-    margin-top: 0px;
+    margin-top: 20px;
 }
 .navbar-toggle span {
     color: #fff;
@@ -190,7 +190,27 @@ li a.active {
 }
 
 /*about area*/
-
+.text-link {
+    color: inherit;
+    text-decoration: underline;
+}
+.text-link-plain {
+    color: inherit;
+}
+.text-link:visited {
+    color: inherit;
+    text-decoration: underline;
+}
+.text-link:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+.text-link-plain:visited {
+    color: inherit;
+}
+.text-link-plain:hover {
+    color: #000000;
+}
 .about h2 {
     padding-top: 40px;
     padding-bottom: 20px;
@@ -254,7 +274,7 @@ li a.active {
     border-top: 15px solid #fff;
 }
 .about-details {
-    background: #2a2a2a;
+    background: #efa221;
     border-top: 2px solid #fff;
     transition: all .7s ease 0s;
     -webkit-transition: all .7s ease 0s;
@@ -275,24 +295,26 @@ li a.active {
     padding-bottom: 30px;
 }
 .single-about-detail:hover .about-details {
-    background: #3a9dca;
+    background: #d55127;
 }
 .single-about-detail:hover .pentagon-text h1 {
     color: #3a9dca;
 }
 
-/*service area*/
 
+/*service area*/
 .service {
-    background: url(../img/pattern.jpg);
-    background-repeat: repeat-yx;
+    /*background: url(../img/pattern.jpg);*/
+    /*background-repeat: repeat-yx;*/
+    background-color: #efa221;
+    background: radial-gradient( #efa221, #d55127);
     margin-top: 40px;
     padding-bottom: 20px;
 }
 .service h2 {
     font-size: 90px;
     color: #fff;
-    margin-top: 90px;
+    margin-top: 90px;ca
     margin-bottom: 10px;
 }
 .service h4 {
@@ -388,10 +410,50 @@ li a.active {
     position: absolute;
 }
 
-/*team section*/
-
-.team {
+/*parents section*/
+.parents {
+    padding-top: 20px;
     padding-bottom: 60px;
+}
+.parents h2 {
+    font-size: 90px;
+    color: #d55127;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+.parents h4 {
+    font-size: 24px;
+    color: #737373;
+    margin-top: 0;
+    margin-bottom: 45px;
+}
+
+
+/*students section*/
+.students {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    background: linear-gradient(to right bottom, #efa221, #efa221, #d55127);
+}
+.students h2 {
+    font-size: 90px;
+    color: #fff;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+.students h4 {
+    font-size: 24px;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 45px;
+}
+
+
+/*team section*/
+.team {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    /*background: linear-gradient(to left bottom, #d55127, #efa221, #efa221);*/
 }
 .team h2 {
     font-size: 90px;
@@ -405,23 +467,24 @@ li a.active {
     margin-top: 0;
     margin-bottom: 45px;
 }
-
 .single-member {
-    margin-top: 0px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     padding: 0;
-    width: 1000px;
-    height: 210px;
-    margin-left: 180px;
+    height: 170px;
+    margin-left: 10px;
+    position: relative;
 }
 .person img {
-    width: 80%;
+    width: 182px;
+    position: relative;
 }
 .person-detail {
     padding: 0px;
     background: #fff;
-    width: 60%;
+    width: 900px;
     height: 182px;
-    left: -65px;
+    left: -115px;
     position: relative;
     transition: all .7s ease 0s;
     -webkit-transition: all .7s ease 0s;
@@ -448,7 +511,7 @@ li a.active {
     -ms-transition: all .7s ease 0s;
 }
 .arrow-bottom {
-    position: absolute;
+    position: relative;
     width: 20px;
     height: 20px;
     background: #fff;
@@ -468,32 +531,54 @@ li a.active {
 .person-detail h3 {
     margin: 10px;
     font-size: 30px;
-    color: #737373;
+    color: #d55127;
+    -webkit-transition: all .7s ease 0s;
+    -moz-transition: all .7s ease 0s;
+    -o-transition: all .7s ease 0s;
+    -ms-transition: all .7s ease 0s;
 }
 .person-detail h4 {
     font-size: 20px;
     color: #737373;
+    -webkit-transition: all .7s ease 0s;
+    -moz-transition: all .7s ease 0s;
+    -o-transition: all .7s ease 0s;
+    -ms-transition: all .7s ease 0s;
 }
 .person-detail p {
-    margin: 10px;
-    font-size: 13px;
+    margin: 20px;
+    font-size: 15px;
     color: #737373;
     font-family: 'Open Sans', sans-serif;
+    -webkit-transition: all .7s ease 0s;
+    -moz-transition: all .7s ease 0s;
+    -o-transition: all .7s ease 0s;
+    -ms-transition: all .7s ease 0s;
 }
 .single-member:hover .person-detail {
-    background: #2a2a2a;
+    background: #737373;
+}
+.single-member:hover .person-detail p{
+    color: #fff;
+}
+.single-member:hover .person-detail h3{
+    color: #fff;
+}
+.single-member:hover .person-detail h4{
+    color: #fff;
 }
 .single-member:hover .arrow-top {
     background: #2a2a2a;
 }
 .single-member:hover .arrow-bottom {
-    background: #2a2a2a;
+    background: #737373;
 }
 
 /*contact section*/
 
 .contact-caption {
-    background: #3a9dca;
+    background: #efa221;
+    /*background: linear-gradient(to right bottom,  #efa221, #d55127);*/
 }
 .contact-heading h2 {
     color: #fff;
@@ -563,7 +648,7 @@ li a.active {
     margin-bottom: 12px;
 }
 .info-detail {
-    border-top: 1px solid #53cde5;
+    border-top: 1px solid #fff;
     padding-top: 15px;
 }
 .info-detail p{
@@ -574,7 +659,7 @@ li a.active {
     bottom: 40px;
 }
 .form {
-    border-top: 1px solid #53cde5;
+    border-top: 1px solid #fff;
     padding-top: 15px;
     text-align: right;
 }
@@ -711,6 +796,9 @@ responsive area
         font-size: 20px;
         padding: 14px 12px;
     }
+    .header-logo img {
+        margin-top: 20px;
+    }
     .carousel-caption h1 {
         font-size: 120px;
     }
@@ -733,6 +821,13 @@ responsive area
     }
     .person-detail p {
         font-size: 12px;
+    }
+    .single-member {
+        width: 700px;
+    }
+    .person-detail {
+        width: 600px;
+        left: -40px;
     }
 }
 
@@ -759,8 +854,14 @@ responsive area
     h2 {
         font-size: 70px !important;
     }
+    h3{
+        font-size: 20px !important;
+    }
     h4 {
         font-size: 18px !important;
+    }
+    p {
+        font-size: 10px !important;
     }
     #map {
         height: 1050px;
@@ -771,6 +872,13 @@ responsive area
     }
     .contact-caption {
         margin-top: 110px;
+    }
+    .single-member {
+        width: 300px;
+    }
+    .person-detail {
+        width: 400px;
+        left: 100px;
     }
 }
 
