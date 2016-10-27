@@ -48,7 +48,7 @@ h2 {
     margin: auto;
 }
 .top-header img.logo {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     margin-top: 0px;
     transition: all .5s ease 0s;
     -webkit-transition: all .5s ease 0s;
@@ -68,7 +68,7 @@ h2 {
     -ms-transition: all .5s ease 0s;
 }
 .nav-bar {
-    margin-top: 29px;
+    margin-top: 0px;
 }
 .navbar-toggle span {
     color: #fff;
@@ -752,7 +752,7 @@ responsive area
     .carousel-caption button {
         width: 180px;
         height: 50px;
-        background: #3a9ecb;
+        background: #efa221;
         color: #fff;
         font-size: 22px;
     }
