@@ -25,9 +25,39 @@ a {
 }
 h1,
 h2 {
+    font-size: 60px !important;
     text-transform: uppercase;
     font-weight: bold;
 }
+h3 {
+    text-align: left;
+    margin-left: 30px;
+    font-size: 20px;
+}
+h4 {
+    text-align:left;
+    font-size: 21px !important;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+.indent{ 
+    text-indent: 50px; 
+}
+.centered {
+    text-align: center;
+    margin-left: 0px;
+}
+.map {
+        height: 400px;
+        width: 100%;
+
+}
+
+
 
 /*header area*/
 
@@ -36,10 +66,6 @@ h2 {
     position: fixed;
     width: 100%;
     z-index: 99999;
-}
-.nopadding {
-   padding: 0 !important;
-   margin: 0 !important;
 }
 .header-backup {
     width: 20px;
@@ -60,22 +86,29 @@ h2 {
     background-color: transparent;
     border-color: transparent;
     margin-bottom: 0;
-    margin-top: 12px;
+    margin-top: 30px;
     transition: all .5s ease 0s;
     -webkit-transition: all .5s ease 0s;
     -moz-transition: all .5s ease 0s;
     -o-transition: all .5s ease 0s;
     -ms-transition: all .5s ease 0s;
 }
-.nav-bar {
-    margin-top: 20px;
-}
+
 .navbar-toggle span {
     color: #fff;
 }
 ul.nav {
     margin: 0;
-    padding: 0;
+    padding: 20px;
+}
+.nav.header-logo{
+    margin: 0;
+    padding: 100px;
+}
+.navbar-image{
+    margin-top: 10px;
+    margin-bottom:10px;
+    height: 120px;
 }
 .navbar-default .navbar-nav>li>a {
     font-size: 20px;
@@ -86,7 +119,7 @@ ul.nav {
     -moz-transition: all .7s ease 0s;
     -o-transition: all .7s ease 0s;
     -ms-transition: all .7s ease 0s;
-    padding: 14px 15px;
+    padding: 14px 10px;
     font-weight: bold;
 }
 .navbar-default .navbar-nav>li>a:hover {
@@ -100,7 +133,6 @@ li a.active {
 }
 .navbar-default .navbar-toggle {
     border-color: #fff;
-    margin-top: 4px;
 }
 
 /*slider area*/
@@ -196,6 +228,7 @@ li a.active {
 }
 .text-link-plain {
     color: inherit;
+    text-align: center;
 }
 .text-link:visited {
     color: inherit;
@@ -221,7 +254,7 @@ li a.active {
 .about h4 {
     font-size: 24px;
     color: #737373;
-    margin-bottom: 45px;
+    margin-bottom: 30px;
 }
 .about-img img {
     width: 100%;
@@ -283,9 +316,12 @@ li a.active {
     -ms-transition: all .7s ease 0s;
 }
 .about-details h3 {
-    font-size: 36px;
+    font-size: 30px;
     color: #fff;
-    margin-top: 0;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+    padding-bottom: 5px;
 }
 .about-details p {
     font-size: 13px;
@@ -306,10 +342,17 @@ li a.active {
 .service {
     /*background: url(../img/pattern.jpg);*/
     /*background-repeat: repeat-yx;*/
-    background-color: #efa221;
-    background: radial-gradient( #efa221, #d55127);
+    /*background-color: #efa221;*/
+    /*background: linear-gradient(to  bottom, #d55127, #d55127, #efa221, #fff);*/
+    /*background: radial-gradient( #d3937e, #e2b9ac, #fff);*/
+    background: repeating-radial-gradient(
+            circle,
+            #e06c47,
+            #e06c47 15px,
+            #d55127 15px,
+            #d55127 135px);
     margin-top: 40px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
 }
 .service h2 {
     font-size: 90px;
@@ -415,6 +458,13 @@ li a.active {
     padding-top: 20px;
     padding-bottom: 60px;
 }
+.parents p {
+    font-size: 18px;
+    color: #737373;
+    text-align: left;
+    margin-left: 125px;
+    margin-right: 50px;
+}
 .parents h2 {
     font-size: 90px;
     color: #d55127;
@@ -424,16 +474,63 @@ li a.active {
 .parents h4 {
     font-size: 24px;
     color: #737373;
-    margin-top: 0;
-    margin-bottom: 45px;
+    margin-bottom: 25px;
+    text-align: left;
 }
 
 
 /*students section*/
 .students {
     padding-top: 40px;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
     background: linear-gradient(to right bottom, #efa221, #efa221, #d55127);
+    /*background: radial-gradient(#efc575, #f9dca4, #ffffff);*/
+/*    background: repeating-linear-gradient(
+            135deg,
+            #ffb130,
+            #ffb130 30px,
+            #ffb130 30px,
+            #efa221 210px)*/
+}
+.gradient-pattern {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border: none;
+  font: normal 100%/normal Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: -webkit-linear-gradient(-45deg, rgb(158,95,26) 22px, rgb(217,189,116) 22px, rgb(217,189,116) 24px, rgba(0,0,0,0) 24px, rgba(0,0,0,0) 67px, rgb(217,189,116) 67px, rgb(217,189,116) 69px, rgba(0,0,0,0) 69px), -webkit-linear-gradient(-135deg, rgb(158,95,26) 22px, rgb(217,189,116) 22px, rgb(217,189,116) 24px, rgba(0,0,0,0) 24px, rgba(0,0,0,0) 67px, rgb(217,189,116) 67px, rgb(217,189,116) 69px, rgba(0,0,0,0) 69px), rgb(158, 95, 26);
+  background: -moz-linear-gradient(135deg, rgb(158,95,26) 22px, rgb(217,189,116) 22px, rgb(217,189,116) 24px, rgba(0,0,0,0) 24px, rgba(0,0,0,0) 67px, rgb(217,189,116) 67px, rgb(217,189,116) 69px, rgba(0,0,0,0) 69px), -moz-linear-gradient(225deg, rgb(158,95,26) 22px, rgb(217,189,116) 22px, rgb(217,189,116) 24px, rgba(0,0,0,0) 24px, rgba(0,0,0,0) 67px, rgb(217,189,116) 67px, rgb(217,189,116) 69px, rgba(0,0,0,0) 69px), rgb(158, 95, 26);
+  background: linear-gradient(135deg, rgb(158,95,26) 22px, rgb(217,189,116) 22px, rgb(217,189,116) 24px, rgba(0,0,0,0) 24px, rgba(0,0,0,0) 67px, rgb(217,189,116) 67px, rgb(217,189,116) 69px, rgba(0,0,0,0) 69px), linear-gradient(225deg, rgb(158,95,26) 22px, rgb(217,189,116) 22px, rgb(217,189,116) 24px, rgba(0,0,0,0) 24px, rgba(0,0,0,0) 67px, rgb(217,189,116) 67px, rgb(217,189,116) 69px, rgba(0,0,0,0) 69px), rgb(158, 95, 26);
+  background-position: 0 0, 0 64px;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: 64px 128px;
+  background-size: 64px 128px;
+}
+.gradient-pattern2 {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border: none;
+  font: normal 16px/normal "Times New Roman", Times, serif;
+  color: rgba(0,0,0,0.9);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: -webkit-linear-gradient(45deg, rgba(255,0,0,0) 0, rgba(255,0,0,0) 49%, rgba(255,0,0,1) 49%, rgba(255,0,0,1) 51%, rgba(255,0,0,1) 51%, rgba(255,0,0,0) 51%, rgba(255,0,0,0) 100%), -webkit-linear-gradient(-45deg, rgba(255,0,0,0) 0, rgba(255,0,0,0) 49%, rgba(255,0,0,1) 49%, rgba(255,0,0,1) 51%, rgba(255,0,0,1) 51%, rgba(255,0,0,0) 51%, rgba(255,0,0,0) 100%);
+  background: -moz-linear-gradient(45deg, rgba(255,0,0,0) 0, rgba(255,0,0,0) 49%, rgba(255,0,0,1) 49%, rgba(255,0,0,1) 51%, rgba(255,0,0,1) 51%, rgba(255,0,0,0) 51%, rgba(255,0,0,0) 100%), -moz-linear-gradient(135deg, rgba(255,0,0,0) 0, rgba(255,0,0,0) 49%, rgba(255,0,0,1) 49%, rgba(255,0,0,1) 51%, rgba(255,0,0,1) 51%, rgba(255,0,0,0) 51%, rgba(255,0,0,0) 100%);
+  background: linear-gradient(45deg, #d55127 0, #d55127 49%, #000 49%, #000 51%, #000 51%, #d55127 51%, #d55127 100%), linear-gradient(135deg, #d55127 0, #d55127 49%, #000 49%, #000 51%, #000 51%, #d55127 51%, #d55127 100%);
+  background-position: -5px 0, 5px 0;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: 20px 10px;
+  background-size: 20px 10px;
 }
 .students h2 {
     font-size: 90px;
@@ -481,11 +578,12 @@ li a.active {
 }
 .person-detail {
     padding: 0px;
-    background: #fff;
+    background: #f7eeea;
     width: 900px;
     height: 182px;
     left: -115px;
     position: relative;
+    text-align: left;
     transition: all .7s ease 0s;
     -webkit-transition: all .7s ease 0s;
     -moz-transition: all .7s ease 0s;
@@ -514,7 +612,7 @@ li a.active {
     position: relative;
     width: 20px;
     height: 20px;
-    background: #fff;
+    background: #f7eeea;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
@@ -529,8 +627,10 @@ li a.active {
     -ms-transition: all .7s ease 0s;
 }
 .person-detail h3 {
-    margin: 10px;
+    margin: 0px;
+    margin-bottom: 10px;
     font-size: 30px;
+    margin-left: 20px;
     color: #d55127;
     -webkit-transition: all .7s ease 0s;
     -moz-transition: all .7s ease 0s;
@@ -538,7 +638,9 @@ li a.active {
     -ms-transition: all .7s ease 0s;
 }
 .person-detail h4 {
-    font-size: 20px;
+    font-size: 18px;
+    margin-left: 50px;
+    margin-bottom: 10px;
     color: #737373;
     -webkit-transition: all .7s ease 0s;
     -moz-transition: all .7s ease 0s;
@@ -546,7 +648,9 @@ li a.active {
     -ms-transition: all .7s ease 0s;
 }
 .person-detail p {
-    margin: 20px;
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
     font-size: 15px;
     color: #737373;
     font-family: 'Open Sans', sans-serif;
@@ -578,6 +682,12 @@ li a.active {
 
 .contact-caption {
     background: #efa221;
+    background: repeating-linear-gradient(
+          55deg,
+          #e06c47,
+          #e06c47 10px,
+          #d55127 10px,
+          #d55127 200px);
     /*background: linear-gradient(to right bottom,  #efa221, #d55127);*/
 }
 .contact-heading h2 {
@@ -596,17 +706,18 @@ li a.active {
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
-    border-bottom: 1px solid #13849c;
     padding-bottom: 12px;
     margin-bottom: 0;
 }
+.contact-form {
+    padding-left: 40px;
+}
 .contact-form h3 {
-    padding-left: 0;
+    padding-left: 0px;
     font-size: 30px;
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
-    border-bottom: 1px solid #13849c;
     padding-bottom: 12px;
     margin-bottom: 0;
 }
@@ -648,7 +759,7 @@ li a.active {
     margin-bottom: 12px;
 }
 .info-detail {
-    border-top: 1px solid #fff;
+    border-top: 2px solid #fff;
     padding-top: 15px;
 }
 .info-detail p{
@@ -659,7 +770,7 @@ li a.active {
     bottom: 40px;
 }
 .form {
-    border-top: 1px solid #fff;
+    border-top: 2px solid #fff;
     padding-top: 15px;
     text-align: right;
 }
@@ -793,11 +904,17 @@ responsive area
 
 @media (min-width: 992px) and (max-width: 1199px) {
     .navbar-default .navbar-nav>li>a {
-        font-size: 20px;
-        padding: 14px 12px;
+        font-size: 18px;
+        padding: 10px 8px;
+    }
+    .navbar-image {
+        margin-top: 0px;
+        margin-right: 0px;
+        padding-right: 0px;
+        height: 90px;
     }
     .header-logo img {
-        margin-top: 20px;
+        margin-top: 10px;
     }
     .carousel-caption h1 {
         font-size: 120px;
@@ -811,10 +928,10 @@ responsive area
         font-size: 26px;
     }
     h2 {
-        font-size: 75px !important;
+        font-size: 50px !important;
     }
     h4 {
-        font-size: 22px !important;
+        font-size: 20px !important;
     }
     .person-detail h3 {
         font-size: 26px;
@@ -838,6 +955,10 @@ responsive area
         font-size: 16px;
         padding: 10px 8px;
     }
+    .navbar-image {
+        margin-top: 10px;
+        height: 90px;
+    }
     .carousel-caption h1 {
         font-size: 90px;
     }
@@ -852,7 +973,7 @@ responsive area
         font-size: 22px;
     }
     h2 {
-        font-size: 70px !important;
+        font-size: 40px !important;
     }
     h3{
         font-size: 20px !important;
@@ -861,7 +982,7 @@ responsive area
         font-size: 18px !important;
     }
     p {
-        font-size: 10px !important;
+        font-size: 14px !important;
     }
     #map {
         height: 1050px;
@@ -886,10 +1007,14 @@ responsive area
 
 @media (min-width: 480px) and (max-width: 767px) {
     .header-logo img {
-        margin-top: 20px;
+        margin-top: 20px 30px;
     }
     .navbar-default .navbar-nav>li>a {
         font-size: 20px;
+    }
+    .navbar-image {
+        margin-top: 10px;
+        height: 70px;
     }
     .carousel-caption {
         margin-top: -110px;
@@ -913,10 +1038,16 @@ responsive area
         margin-top: -1120px;
     }
     h2 {
-        font-size: 70px !important;
+        font-size: 35px !important;
+    }
+    h3 {
+        font-size: 20px !important;
     }
     h4 {
-        font-size: 21px !important;
+        font-size: 16px !important;
+    }
+    p {
+        font-size: 14px !important;
     }
     .contact-info ul {
         margin-left: 4px;
@@ -927,20 +1058,24 @@ responsive area
     .contact-caption {
         margin-top: 140px;
     }
+    .single-about-detail {
+        margin: 0px 50px 0px 50px;
+    }
 }
 
 /* XS Portrait */
 
 @media (max-width: 479px) {
     .top-header img.logo {
-        margin: 20px 10px;
+        margin: 10px 10px;
     }
-    .header-logo {
-        margin-top: 20px !important;
+    .navbar-image {
+        margin-top: 10px;
+        height: 40px;
     }
     .navbar-default .navbar-toggle {
         border-color: #fff;
-        margin-top: -7px;
+        margin-top: 10px;
         right: 10%;
     }
     .navbar-default .navbar-nav>li>a {
@@ -972,21 +1107,22 @@ responsive area
     .carousel-control .icon-prev {
         margin-top: 30px;
     }
-    .about h2 {
-        font-size: 50px;
+    h2 {
+        font-size: 25px !important;
         color: #d55127;
         margin-top: 30px;
     }
-    .service h2 {
-        font-size: 50px;
-        margin-top: 40px;
+    h3 {
+        font-size: 15px !important;
     }
-    .team h2 {
-        font-size: 50px;
-        margin-top: 40px;
+    button {
+        font-size: 12px !important;
     }
     h4 {
         font-size: 18px !important;
+    }
+    p {
+        font-size: 12px !important;
     }
     .contact-caption {
         margin-top: 38%;
@@ -1035,5 +1171,8 @@ responsive area
     }
     .footer p {
         font-size: 10px;
+    }
+    .single-about-detail {
+        margin: 0px 50px 0px 50px;
     }
 }
