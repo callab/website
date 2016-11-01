@@ -1457,6 +1457,7 @@ class BibEntry {
     if (FORCE_NAMELIST_SEPARATOR !== '') {$sep = FORCE_NAMELIST_SEPARATOR;}
 
     return implode($sep ,$array_authors);
+
   }
 
     /** adds a link to the author page */
