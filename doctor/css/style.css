@@ -198,14 +198,32 @@ li a.active {
 .item {
     position: relative;
 }
+
+.button a{
+    color: #ffffff;
+}
+
 .carousel-caption {
     position: absolute;
     text-align: left;
-    left: 12%;
+    left: 40%;
     line-height: 1;
     top: 50%;
     margin-top: -100px;
 }
+
+.carousel-label {
+    position: absolute;
+    text-align: center;
+    left: 22%;
+    top: 5%;
+    margin-top: 0px;
+}
+
+.carousel-label h2{
+    color:  #d55127;
+}
+
 .carousel-control .glyphicon-chevron-left,
 .carousel-control .icon-prev {
     font-size: 18px;
