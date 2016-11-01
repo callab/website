@@ -820,6 +820,10 @@ li a.active {
     padding-right: 40px;
 }
 
+.contact-info {
+    padding-left: 40px;
+}
+
 /*gmap*/
 
 #map {
