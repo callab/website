@@ -1,0 +1,64 @@
+.date {   
+	background-color: blue; 
+}
+.btb-header { }
+.rheader {  
+	font-size: large 
+}
+.sheader {
+	padding-top: 10px;
+}
+.bibref {  
+	/*padding:3px; */
+/*	padding-left:15px;  */
+	vertical-align:top; 
+	color:white;}
+/*.bibtitle { font-weight:bold; }*/
+.bibitem {
+	text-indent:-35px;
+	padding-left:35px;
+}
+.bibbooktitle { font-style:italic; }
+.count { color:#737373; font-size:15px;}
+.sheader { font-weight:bold; font-size: large;} 
+.volume { font-style: italic; }
+
+
+/*pubs area*/
+.pubs {
+    background: #ffffff;
+    padding-bottom: 25px;
+}
+
+.pubs a{
+	font-size: 15px;
+    color: #efa221;
+}
+
+.pubs a:hover{
+    color: #d55127;
+}
+
+
+.pubs h2 {
+    padding-top: 30px;
+    padding-bottom: 0px;
+    font-size: 70px;
+    color: #d55127;
+    margin-top: 0px;
+}
+.pubs h4 {
+    /*margin: 0px 60px 0px 60px;*/
+    font-size: 24px;
+    color: #737373;
+    margin-bottom: 0px;
+}
+
+.result {
+	font-size: 15px;
+	color: #737373;
+}
+
+.sheader{
+	color: #d55127;
+}
