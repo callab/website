@@ -1,89 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+<html lang="en"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Communication and Learning Lab">
+    <meta name="author" content="Dan Yurovsky">
+  <title>The Communication and Learning Lab at U Chicago</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="css/bibtexbrowser.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,800,700,300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=BenchNine:300,400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Cabin:400,700' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="img/favicon.ico">
 
-    <title>Communication and Learning Lab</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-
-  <!-- bibtexbrowser styles -->
-  <link href="../assets/css/bibtexbrowser.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    
-    <script src="assets/js/modernizr.js"></script>
+  <script src="js/modernizr.js"></script>
   </head>
     
 <body>
  
-    <!-- Fixed navbar -->
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">Communication and Learning Lab</a>
-        </div>
-        <div class="navbar-collapse collapse navbar-right">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li class="active"><a href="bibtexbrowser.local.php?bib=citations.bib&all">PUBLICATIONS</a></li>
-            <!-- <li><a href="contact.html">CONTACT</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">PAGES <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="blog.html">BLOG</a></li>
-                <li><a href="single-post.html">SINGLE POST</a></li>
-                <li><a href="portfolio.html">PORTFOLIO</a></li>
-                <li><a href="single-project.html">SINGLE PROJECT</a></li>
+  <header class="top-header">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 col-xs-3 col-lg-3 col-sm-3 header-logo">
+        <a href="index.html"><img src="img/callab_logo.png" alt="" class="navbar-image nav navbar"></a>
+      </div>
+
+      <div class="col-md-9 col-xs-9 col-lg-9 col-sm-9">
+        <nav class="nav navbar navbar-default">
+          <div class="container-fluid nav-bar">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              
+              <ul class="nav navbar-nav navbar navbar-default">
+                <li><a class="menu active" href="index.html" >Home</a></li>
+                <li><a class="menu" href="index.html#about">About</a></li>
+                <li><a class="menu" href="index.html#people">People</a></li>
+                <li><a class="menu" href="index.html#parents">Parents</a></li>
+                <li><a class="menu" href="index.html#students">Join</a></li>
+                <li><a class="menu" href="index.html#contact">Contact</a></li>
+                <li><a class="menu" href="bibtexbrowser.local.php?bib=citations.bib&all">Publications</a></li>
+                <li><a class="fa fa-github" style="font-size:1.5em;" href="https://github.com/callab"></a></li>
+      </div>
               </ul>
-            </li> -->
-          </ul>
-        </div><!--/.nav-collapse -->
+            </div><!-- /navbar-collapse -->
+          </div><!-- / .container-fluid -->
+        </nav>
       </div>
     </div>
+    </div>
+  </header> <!-- end of header area -->
 
-<!-- *****************************************************************************************************************
-   RED WRAP
-   ***************************************************************************************************************** -->
-  <div id="red">
-      <div class="container">
+  <section class="pubs" id="pubs">
+  <div class="header-backup"></div>
+    <div class="container">
       <div class="row">
-        <h3>Publications</h3>
-      </div><!-- /row -->
-      </div> <!-- /container -->
-  </div><!-- /red -->
-
-  <div class="container mb" style="margin-top:-40px">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2">
-    <a href="http://callab.uchicago.edu/bibtexbrowser.local.php?all&bib=citations.bib">[all publications]</a>       
-    <a href="http://callab.uchicago.edu/bibtexbrowser.local.php?type=article&bib=citations.bib">[refereed journal articles only]</a>
-    <br>
-    <br>
+        <div class="col-md-10 col-md-offset-1">
+          <h2>Publications</h2>
+          <a href="http://callab.uchicago.edu/bibtexbrowser.local.php?all&bib=citations.bib">[all publications]</a>       
+          <a href="http://callab.uchicago.edu/bibtexbrowser.local.php?type=article&bib=citations.bib">[refereed journal articles only]</a>
+          <br>
+          <br>
 
 <?php /* bibtexbrowser: publication lists with bibtex and PHP
 <!--this is version vef0563951ad96fad3696518df89f88324aaf46ff -->
@@ -1382,7 +1370,7 @@ class BibEntry {
       return $this->formatAuthorCommaSeparated($author);
     } else if (USE_INITIALS_FOR_NAMES) {
       return $this->formatAuthorInitials($author);
-    }	
+    } 
 
     else return $this->formatAuthorCanonical($author);
   }
@@ -1929,13 +1917,13 @@ function compare_bib_entry_by_year($a, $b)
     switch (strtolower($a->getYearRaw())) {
       case Q_YEAR_INPRESS:
         $yearA = PHP_INT_MAX + ORDER_YEAR_INPRESS;
-	break;
+  break;
       case Q_YEAR_ACCEPTED:
         $yearA = PHP_INT_MAX + ORDER_YEAR_ACCEPTED;
-	break;
+  break;
       case Q_YEAR_SUBMITTED:
         $yearA = PHP_INT_MAX + ORDER_YEAR_SUBMITTED;
-	break;
+  break;
       default:
         $yearA = PHP_INT_MAX + ORDER_YEAR_OTHERNONINT;
     }
@@ -1945,13 +1933,13 @@ function compare_bib_entry_by_year($a, $b)
     switch (strtolower($b->getYearRaw())) {
       case Q_YEAR_INPRESS:
         $yearB = PHP_INT_MAX + ORDER_YEAR_INPRESS;
-	break;
+  break;
       case Q_YEAR_ACCEPTED:
         $yearB = PHP_INT_MAX + ORDER_YEAR_ACCEPTED;
-	break;
+  break;
       case Q_YEAR_SUBMITTED:
         $yearB = PHP_INT_MAX + ORDER_YEAR_SUBMITTED;
-	break;
+  break;
       default:
         $yearB = PHP_INT_MAX + ORDER_YEAR_OTHERNONINT;
     }
@@ -2568,9 +2556,9 @@ else $page = 1;
       if ($index >= $startIndex && $index < $endIndex) {
         if ($queryKey === 'year') {
           $href = makeHref(array($queryKey => __($item)));
-	} else {
+  } else {
           $href = makeHref(array($queryKey => $key));
-	}
+  }
         echo '<a '. $href .' target="'.BIBTEXBROWSER_MENU_TARGET.'">'. $item ."</a>\n";
         echo "<div class=\"mini_se\"></div>\n";
       }
@@ -2594,9 +2582,9 @@ function query2title(&$query) {
       if($k == Q_KEYS) { $v=json_encode(array_values($v)); }
       if($k == Q_RANGE) {
         foreach ($v as &$range) {
-	  $range = $range[0].'-'.$range[1];
-	}
-	$v = join($v, ',');
+    $range = $range[0].'-'.$range[1];
+  }
+  $v = join($v, ',');
       }
       $headers[$k] = __(ucwords($k)).': '.ucwords(htmlspecialchars($v));
   }
@@ -2714,10 +2702,10 @@ class SimpleDisplay  {
 
   var $headingLevel = BIBTEXBROWSER_HTMLHEADINGLEVEL;
   function incHeadingLevel ($by=1) {
-  	$this->headingLevel += $by;
+    $this->headingLevel += $by;
   }
   function decHeadingLevel ($by=1) {
-  	$this->headingLevel -= $by;
+    $this->headingLevel -= $by;
   }
 
   function setDB(&$bibdatabase) {
@@ -2828,12 +2816,12 @@ class SimpleDisplay  {
         return '<div class="'.$this->headerCSS.'">'.$bib->getYear().'</div>'."\n";
         break;
       case 'list':
-      	$string = '';
+        $string = '';
         if ($pred) $string .= "</ul>\n";
-	if ($bib->hasField(YEAR))
-	  $year = $bib->getYear();
-	else
-	  $year = __('No date');
+  if ($bib->hasField(YEAR))
+    $year = $bib->getYear();
+  else
+    $year = __('No date');
         return $string.'<h'.$this->headingLevel.'>'.$year."</h".$this->headingLevel.">\n<ul class=\"result\">\n";
         break;
       default:
@@ -3490,25 +3478,25 @@ class BibDataBase {
               break;
             }
           }
-	  else if ($field==Q_RANGE) {
-	    $year = $bib->getYear();
-	    $withinRange = false;
+    else if ($field==Q_RANGE) {
+      $year = $bib->getYear();
+      $withinRange = false;
 
-	    foreach ($query[Q_RANGE] as $elements) {
-	      if ($elements[0] === "" && $elements[1] === "")
-	        $withinRange = true;
+      foreach ($query[Q_RANGE] as $elements) {
+        if ($elements[0] === "" && $elements[1] === "")
+          $withinRange = true;
               else if ($elements[0] === "" && $year <= $elements[1])
-	        $withinRange = true;
+          $withinRange = true;
               else if ($elements[1] === "" && $year >= $elements[0])
-	        $withinRange = true;
+          $withinRange = true;
               else if ($year <= $elements[1] && $year >= $elements[0]) {
-	        $withinRange = true;
+          $withinRange = true;
               }
-	    }
+      }
 
-	    if (!$withinRange)
+      if (!$withinRange)
               $entryisselected = false;
-	  }
+    }
           else {
             if (!$bib->hasPhrase($fragment, $field))  {
               $entryisselected = false;
@@ -3651,7 +3639,7 @@ dd {
 .bibentry-by { font-style: italic; }
 .bibentry-abstract { margin:15px; }
 .bibentry-label { margin-top:15px; }
-.bibentry-reference { margin-bottom:15px; padding:10px; background: none repeat scroll 0 0 #F5F5F5; border: 1px solid #DDDDDD; }
+.bibentry-reference { margin-bottom:15px; padding:10px; background: none repeat scroll 0 0 #d55127; border: 1px solid #DDDDDD; }
 
 .btb-nav { text-align: right; }
 
@@ -4198,9 +4186,9 @@ class Dispatcher {
       } else if ($matches[0] < 100) {
         if ($matches[0] > $nextYear2D) {
           $lower = $thisCentury + $matches[0] - 100;
-	} else {
-	  $lower = $thisCentury + $matches[0];
-	}
+  } else {
+    $lower = $thisCentury + $matches[0];
+  }
       } else {
         $lower = $matches[0];
       }
@@ -4219,8 +4207,8 @@ class Dispatcher {
         } else if ($matches[2] < 100) {
           if ($matches[2] > $nextYear2D) {
             $upper = $thisCentury + $matches[2] - 100;
-	  } else {
-	    $upper = $thisCentury + $matches[2];
+    } else {
+      $upper = $thisCentury + $matches[2];
           }
         } else {
           $upper = $matches[2];
@@ -4339,56 +4327,50 @@ $main = new $class();
 $main->main();
 ?>
 
-    </div>      
+        </div>      
+      </div>
     </div>
-    </div>
+  </section>
 
-    <!-- *****************************************************************************************************************
-   FOOTER
-   ***************************************************************************************************************** -->
-   <div id="footerwrap">
+   <section>
+    <div class="container">
+      <div class = "row">
+        <div class = "col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+          <div class = "row">
+            <div class = "col-md-4 col-sm-4">
+              <img src="img/affiliates/logo.rgb.maroon.jpg" width="100%" alt="">
+            </div>
+            <div class = "col-md-4 col-sm-4">
+              <img src="img/affiliates/cecr_text.png" width="100%" alt="">
+            </div>
+            <div class = "col-md-4 col-sm-4">
+              <img src="img/affiliates/socsci.png" width="100%">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer starts here -->
+  <footer class="footer clearfix">
     <div class="container">
       <div class="row">
-        <div class="col-lg-4">
-          <h4>About</h4>
-          <div class="hline-w"></div>
-          <p>Short Text about the lab goes here</p>
+        <div class="col-xs-12 footer-para">
+          <p>CaLLab logo designed by <a href="http://www.jimmycourtice.com">Jimmy Courtice</a></p>
         </div>
-        <div class="col-lg-4">
-          <h4>Social Links</h4>
-          <div class="hline-w"></div>
-          <p>
-            <a href="https://github.com/callab"><i class="fa fa-github"></i></a>
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-          </p>
-        </div>
-        <div class="col-lg-4">
-          <h4>Our Home</h4>
-          <div class="hline-w"></div>
-          <p>
-            Department of Psychology<br>
-            5848 S University Ave<br/>
-            Chicago, IL 60637<br/>
-          </p>
-        </div>
-      
-      </div><! --/row -->
-    </div><! --/container -->
-   </div><! --/footerwrap -->
+      </div>
+    </div>
+  </footer>
 
-  
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/retina-1.1.0.js"></script>
-  <script src="assets/js/jquery.hoverdir.js"></script>
-  <script src="assets/js/jquery.hoverex.min.js"></script>
-  <script src="assets/js/jquery.prettyPhoto.js"></script>
-    <script src="assets/js/jquery.isotope.min.js"></script>
-    <script src="assets/js/custom.js"></script>
+  <!-- script tags
+  ============================================================= -->
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
+  <script src="js/gmaps.js"></script>
+  <script src="js/smoothscroll.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/custom.js"></script>
 
 
   </script>
