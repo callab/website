@@ -528,7 +528,7 @@ li a.active {
     margin-top: 100px;
 }
 .map:target{padding-top: 80px;}
-.parents:target{padding-top: 80px;}
+
 .parents h2 {
     padding-top: 30px;
     padding-bottom: 20px;
