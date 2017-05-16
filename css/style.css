@@ -107,6 +107,7 @@ h4 {
     margin-bottom: 0;
     margin-top: 30px;
     transition: all .5s ease 0s;
+    white-space:nowrap;
     -webkit-transition: all .5s ease 0s;
     -moz-transition: all .5s ease 0s;
     -o-transition: all .5s ease 0s;
@@ -412,7 +413,7 @@ li a.active {
     /*background-color: #efa221;*/
     /*background: linear-gradient(to  bottom, #ffecce, #ffdca3, #ffdca3);*/
     background: #faee5f;
-    /*padding-top: 50px;*/
+    padding-top: 45px;
     padding-bottom: 50px;
 }
 .people:target{padding-top: 80px;}
@@ -510,6 +511,7 @@ li a.active {
   visibility: hidden; 
 }*/
 
+
 /*parents section*/
 .parents {
     position: absolute;
@@ -525,13 +527,13 @@ li a.active {
 .parents-caption {
     position: relative;
     background: #ffffff;
-    margin-top: 100px;
+    margin-top: 60px;
 }
 .map:target{padding-top: 80px;}
 
 .parents h2 {
     padding-top: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
     font-size: 70px;
     color: #d55127;
     margin-top: 0px;
@@ -559,12 +561,19 @@ li a.active {
 .students {
     /*padding-top: 50px;*/
     /*padding-bottom: 0px;*/
-        background: #faee5f;
-        padding-bottom: 50px;
+    background: #faee5f;
+    padding: 60px 0 50px 0;
 }
 
+#joinBody {
+    background: #fff;
+}
 
-.students:target{padding-top: 100px;}
+#joinContent {
+   top:-20px;
+}
+
+.students:target{padding-top: 0px;}
 
 .gradient-pattern {
   -webkit-box-sizing: content-box;
@@ -651,8 +660,8 @@ li a.active {
 }
 .single-member {
     margin: auto;
-    margin-top: 40px;
-    margin-bottom: 30px;
+    /*margin-top: 40px;*/
+    /*margin-bottom: 20px;*/
     padding: 0;
     height: 170px;
     margin-left: 10px;
@@ -660,6 +669,7 @@ li a.active {
 }
 .person img {
     width: 182px;
+    /*height: 182px;*/
     position: relative;
 }
 .person-detail {
@@ -1063,9 +1073,18 @@ responsive area
 /* sm */
 
 @media (min-width: 768px) and (max-width: 991px) {
+    .people {
+        background: #faee5f;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
     .navbar-default .navbar-nav>li>a {
         font-size: 16px;
         padding: 10px 8px;
+    }
+    ul.nav {
+        margin: 0;
+        padding: 0px;
     }
     .navbar-image {
         margin-top: 10px;
@@ -1123,6 +1142,11 @@ responsive area
 /* xs */
 
 @media (min-width: 480px) and (max-width: 767px) {
+    .people {
+        background: #faee5f;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
     .header-logo img {
         margin-top: 20px 30px;
     }
@@ -1198,6 +1222,11 @@ responsive area
     .single-about-detail {
         width: 200px;
         margin: auto !important;
+    }
+    .people {
+        background: #faee5f;
+        padding-top: 30px;
+        padding-bottom: 50px;
     }
     .navbar-image {
         margin-top: 10px;
