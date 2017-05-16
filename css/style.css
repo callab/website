@@ -513,13 +513,22 @@ li a.active {
 
 
 /*parents section*/
+
+.toyroom {
+    position: relative;
+    overflow: hidden;
+}
+
+#toyroom {
+    height: 790px;
+}
+
 .parents {
     position: absolute;
     width: 100%;
-    height: 730px;
-    margin-top: 0px;
+    height: 790px;
+    margin-top: -790px;
     left: 0;
-    margin-top: -730px;
     background: rgba(0, 0, 0, 0.51);
 }
 
@@ -659,12 +668,12 @@ li a.active {
     margin-bottom: 45px;
 }
 .single-member {
-    margin: auto;
+    /*margin: auto;*/
     /*margin-top: 40px;*/
     /*margin-bottom: 20px;*/
     padding: 0;
     height: 170px;
-    margin-left: 10px;
+    margin: 0 10px 50px 0;
     position: relative;
 }
 .person img {
@@ -893,16 +902,6 @@ li a.active {
     height: 730px;
 }
 
-.toyroom {
-    position: relative;
-    overflow: hidden;
-}
-
-#toyroom {
-    height: 730px;
-}
-
-
 .map {
     position: relative;
     overflow: hidden;
@@ -1057,7 +1056,10 @@ responsive area
     }
     .single-member {
         width: 700px;
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+
     }
     .person img{
         left: -75px;
@@ -1073,6 +1075,18 @@ responsive area
 /* sm */
 
 @media (min-width: 768px) and (max-width: 991px) {
+    #toyroom {
+        height: 675px;
+    }
+
+    .parents {
+        position: absolute;
+        width: 100%;
+        height: 675px;
+        margin-top: -675px;
+        left: 0;
+        background: rgba(0, 0, 0, 0.51);
+    }
     .people {
         background: #faee5f;
         padding-top: 30px;
@@ -1116,7 +1130,7 @@ responsive area
         font-size: 12px !important;
     }
     .single-about-detail {
-        width: 200px;
+        /*width: 300px;*/
     }
     .single-member {
         left: 60px;
@@ -1142,6 +1156,20 @@ responsive area
 /* xs */
 
 @media (min-width: 480px) and (max-width: 767px) {
+    .toyroom img{
+        width:175%;
+    }
+    
+    #toyroom {
+        height: 750px;
+    }
+    .parents {
+        height: 750px;
+        margin-top: -750px;
+    }
+    .parents-caption {
+        margin-top:80px;
+    }
     .people {
         background: #faee5f;
         padding-top: 30px;
@@ -1158,21 +1186,23 @@ responsive area
         height: 70px;
     }
     .carousel-caption {
-        margin-top: -110px;
-    }
-    .carousel-caption h1 {
-        font-size: 75px;
+        /*margin-top: 110px;*/
+        font-size: 14px !important;
+        width:70%;
+        height: 55px;
+        left:15%;
     }
     .carousel-caption p {
+        margin-top: -10px !important;
         font-size: 25px;
     }
-    .carousel-caption button {
+/*    .carousel-caption button {
         width: 160px;
         height: 40px;
         font-size: 20px;
-    }
+    }*/
     .single-about-detail {
-        width: 300px;
+        /*width: 300px;*/
         margin: auto !important;
     }
     h2 {
@@ -1188,11 +1218,21 @@ responsive area
         font-size: 12px !important;
     }
     .single-member {
-        left: 40px;
+        left: 5%;
+        /*margin: auto;*/
+        margin-bottom: 20px;
+    }
+    .person img {
+        width: 150px;
+        /*left: -8%;*/
+        /*height: 182px;*/
+        position: relative;
     }
     .person-detail {
-        width: 350px;
-        left: 120px;
+        width: 375px;
+        height: 150px;
+        overflow: scroll;
+        left: 80px;
     }
     .contact-caption {
         margin-top: 100px;
@@ -1203,7 +1243,7 @@ responsive area
         margin-right: 50px;
     }
     .single-about-detail {
-        margin: 0px 50px 0px 50px;
+        /*margin: 0px 50px 0px 50px;*/
     }
     .map {
         width: 400px;
@@ -1216,17 +1256,31 @@ responsive area
 /* XS Portrait */
 
 @media (max-width: 479px) {
+    .toyroom img{
+        width:auto;
+    }
+    
+    #toyroom {
+        height: 800px;
+    }
+    .parents {
+        height: 800px;
+        margin-top: -800px;
+    }
+    .parents-caption {
+        margin-top:30px;
+    }
     .top-header img.logo {
         margin: 10px 10px;
     }
     .single-about-detail {
-        width: 200px;
+        /*width: 200px;*/
         margin: auto !important;
     }
     .people {
         background: #faee5f;
-        padding-top: 30px;
-        padding-bottom: 50px;
+        padding-top: 10px;
+        padding-bottom: 20px;
     }
     .navbar-image {
         margin-top: 10px;
@@ -1245,18 +1299,18 @@ responsive area
         height: 80px;
     }
     .carousel-caption {
-        margin-top: -60px;
+        /*margin-top: 110px;*/
+        font-size: 14px !important;
+        width:70%;
+        height: 65px;
+        left:15%;
     }
     .carousel-caption h1 {
-        font-size: 20px;
+        font-size: 75px;
     }
     .carousel-caption p {
-        font-size: 12px;
-    }
-    .carousel-caption button {
-        width: 90px;
-        height: 23px;
-        font-size: 16px;
+        margin: -15px 5px 0 5px !important;
+        font-size: 25px;
     }
     .carousel-control .glyphicon-chevron-right,
     .carousel-control .icon-next {
@@ -1281,13 +1335,29 @@ responsive area
     }
     h4 {
         font-size: 18px !important;
-        margin-left: 40px;
-        margin-right: 40px;
+        /*margin-left: 40px;*/
+        /*margin-right: 40px;*/
     }
     p {
         font-size: 12px !important;
         margin-left: 40px;
         margin-right: 40px;
+    }
+    .single-member {
+        /*left: 20px;*/
+        margin-bottom: -40px;
+    }
+    .person img {
+        width: 100px;
+        left: -8%;
+        /*height: 182px;*/
+        position: relative;
+    }
+    .person-detail {
+        width: 300px;
+        height: 100px;
+        overflow: scroll;
+        left: 50px;
     }
     .map {
         margin:auto;
