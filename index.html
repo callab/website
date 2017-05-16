@@ -55,7 +55,7 @@
 					        <li><a class="menu" href="#students">Join</a></li>
 					        <li><a class="menu" href="#contact">Contact</a></li>
 					        <li><a class="menu" href="bibtexbrowser.local.php?bib=citations.bib&all">Publications</a></li>
-					        <li><a class="fa fa-github" style="font-size:1.5em;" href="https://github.com/callab"></a></li>
+					        <li><a class="fa fa-github" style="font-size:1.5em;" href="https://github.com/callab"  target="_blank"></a></li>
 				</div>
 					      </ul>
 					    </div><!-- /navbar-collapse -->
@@ -78,7 +78,7 @@
 			            	<div class="carousel-label" >
 			            	</div>
 			                <div class="carousel-caption col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
-			                	<a href="http://dyurovsky.github.io/noisy-kids/">
+			                	<a href="http://dyurovsky.github.io/noisy-kids/" target="_blank">
 			                	<p > RECENT WORK: Noisy channel processing in preschoolers </p> </a>
 			                </div>
 			            </div>
@@ -87,7 +87,7 @@
 			            	<div class="carousel-label ">
 			            	</div>
 			                <div class="carousel-caption col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2"">
-			                	<a href="http://callab.uchicago.edu/papers/yf-devsci-inpress.pdf">
+			                	<a href="http://callab.uchicago.edu/papers/yf-devsci-2017.pdf" target="_blank">
 			                	<p > RECENT WORK:
 		               			Salience and social cues in word learning </p> </a>
 			                </div>
@@ -97,7 +97,7 @@
 			            	<div class="carousel-label">
 			            	</div>
 			                <div class="carousel-caption col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2" >
-			                	<a href="http://callab.uchicago.edu/papers/ydf-cogsci-2016.pdf"> 
+			                	<a href="http://callab.uchicago.edu/papers/ydf-cogsci-2016.pdf" target="_blank"> 
 			                	<p> RECENT WORK: 
 		               			Linguistic tuning 
 		               			to developmental level </p> </a> 
@@ -139,7 +139,7 @@
 									<img class="img-responsive" src="img/ipad_task.jpg" alt="">
 								</div>
 								<div class="about-details">
-									<h3 class="centered">Experimental Studies</h3>
+									<h3 class="centered">Experimental <br> Studies  </h3>
 								</div>
 							</div>
 						</div>
@@ -149,7 +149,7 @@
 									<img class="img-responsive" src="img/toy_play.png" alt="">
 								</div>
 								<div class="about-details">
-									<h3 class="centered">Naturalistic Observation</h3>
+									<h3 class="centered">Naturalistic <br> Observation</h3>
 								</div>
 							</div>
 						</div>
@@ -159,7 +159,7 @@
 									<img class="img-responsive" src="img/lba_mod.png" alt="">
 								</div>
 								<div class="about-details">
-									<h3 class="centered">Computational Models</h3> 
+									<h3 class="centered">Computational <br> Models</h3> 
 								</div>
 							</div>
 						</div>
@@ -191,10 +191,10 @@
 				</div> -->
 				<!-- <div class="col-sm-4"> -->
 					<!-- <div class="row"> -->
-						<div class="single-member">
+						<div class="single-member" onmouseover="fadeToChildhood('yurovsky')" onmouseout="ageMe('yurovsky')">
 							<div class="col-md-4 col-sm-1 col-xs-1">
 								<div class="person">
-									<img class="image-responsive" src="img/team/yurovsky.jpg" alt="member-1">
+									<img class="image-responsive" src="img/team/yurovsky.jpg" alt="member-1" id="yurovsky">
 								</div>
 							</div>
 							<div class="col-md-8 col-sm-1 col-xs-1">
@@ -202,44 +202,64 @@
 									<div class="arrow-bottom"></div>
 									<h3> Daniel Yurovsky | Prinicipal Investigator </h3>
 									<h4> <a class="text-link-plain" href="mailto:yurovsky@uchicago.edu">Email</a> &nbsp; &nbsp; 
-										 <a class="text-link-plain" href="http://www.thoughtfill.com/">Website</a> &nbsp; &nbsp; 
-										 <a class="text-link-plain" href="https://github.com/dyurovsky/">GitHub</a> </h4>
-									<p> Dan was an undergrad computer science major at Carnegie Mellon before completing a PhD in Cognitive Psychology at Indiana University and doing a postdoc in Psych Department at Stanford. He is broadly interested in how we learn from the people around us, and especially how children learn language. Dan is excited understanding communication and learning from a systems perspective. </p>
+										 <a class="text-link-plain" href="http://www.thoughtfill.com/"  target="_blank">Website</a> &nbsp; &nbsp; 
+										 <a class="text-link-plain" href="https://github.com/dyurovsky/" target="_blank">GitHub</a> </h4>
+									<p> Dan was an undergrad computer science major at Carnegie Mellon before completing a PhD in Cognitive Psychology at Indiana University and doing a postdoc in Psych Department at Stanford. He is broadly interested in how we learn from the people around us, and especially how children learn language. Dan is excited about understanding communication and learning from a systems perspective. </p>
 								</div>
 							</div>
 						</div>
-				
-						<br>
-						<br>
+						<br><br><br>
 
-						<div class="single-member">
+						<div class="single-member" onmouseover="fadeToChildhood('morris')" onmouseout="ageMe('morris')">
 							<div class="col-md-4 col-sm-1 col-xs-1">
 								<div class="person">
-									<img class="image-responsive" src="img/team/morris.jpg" alt="member-2">
+									<img class="image-responsive" src="img/team/morris.jpg"  alt="member-2" id="morris">
 								</div>
 							</div>
 							<div class="col-md-8 col-sm-1 col-xs-1">
-								<div class="person-detail">
+								<div class="person-detail" >
 									<div class="arrow-bottom"></div>
 									<h3>Ben Morris | Lab Manager</h3>
 									<h4><a class=text-link-plain href="mailto:benmorris@uchicago.edu">Email</a></h4>
-									<p>Ben received his master's in Developmental Psychology at the University of Cambridge working with Dr. Claire Hughes. Ben has a bachelors in Psychology from Reed College. He is primarily interested optimal word learning strategies and their connection to early cognitive development.  </p>
+									<p>Ben received his master's in Developmental Psychology at the University of Cambridge working with Dr. Claire Hughes. Ben has a B.A. in Psychology from Reed College, where he worked with Jennifer Corpus. He is primarily interested optimal word learning strategies and their connection to early cognitive development.  </p>
 								</div>
 							</div>
 						</div>
-					<!-- </div> -->
+						<br><br><br>
+						<div class="single-member" onmouseover="fadeToChildhood('maddie')" onmouseout="ageMe('maddie')">
+							<div class="col-md-4 col-sm-1 col-xs-1">
+								<div class="person">
+									<img class="image-responsive" src="img/team/maddie.jpg" alt="member-3" id="maddie">
+								</div>
+							</div>
+							<div class="col-md-8 col-sm-1 col-xs-1">
+								<div class="person-detail" >
+									<div class="arrow-bottom"></div>
+									<h3>Maddie Meyers | Research Assistant</h3>
+									<!-- <h4><a class=text-link-plain href="mailto:benmorris@uchicago.edu">Email</a></h4> -->
+									<p><br>Maddie is a second year undergraduate at the University of Chicago, majoring in Comparative Human Development and Psychology. At the Communication and Learning Lab, she studies the use of gesture in relation to early childhood language acquisition.  </p>
+								</div>
+							</div> 
+						</div>
+
+						<br><br><br>
 				<!-- </div> -->
-				<!--<div class="col-md-2 single-member col-sm-5">
-						<div class="col-md-3 person col-sm-2">
-							<img class="image-responsive" src="img/team/morris.jpg" alt="member-2">
+						<div class="single-member" onmouseover="fadeToChildhood('emmi')" onmouseout="ageMe('emmi')">
+							<div class="col-md-4 col-sm-1 col-xs-1">
+								<div class="person">
+									<img class="image-responsive" src="img/team/emmi.jpg" alt="member-3" id="emmi">
+								</div>
+							</div>
+							<div class="col-md-8 col-sm-1 col-xs-1">
+								<div class="person-detail" >
+									<div class="arrow-bottom"></div>
+									<h3>Emmi Russo | Research Assistant</h3>
+									<!-- <h4><a class=text-link-plain href="mailto:benmorris@uchicago.edu">Email</a></h4> -->
+									<p><br>Emmi is a third-year undergraduate at the University of Chicago, pursuing a double major in Computer Science and Psychology. She is interested in social-cognitive development and how the processes of cognition, language, and learning interact.  </p>
+								</div>
+							</div> 
 						</div>
-						<div class="col-md-3 person-detail col-sm-2">
-							<div class="col-md-3 arrow-bottom col-sm-2"></div>
-							<h3>Ben Morris | Lab Manager</h3>
-							<h4><a class=text-link-plain href="mailto:benmorris@uchicago.edu">Email</a></h4>
-							<p>Ben received his master's in Developmental Psychology at the University of Cambridge working with Dr. Claire Hughes. Ben has a bachelors in Psychology from Reed College. He is primarily interested optimal word learning strategies and their connection to early cognitive development.  </p>
-						</div>
-				</div> -->
+
 			</div>
 		</div>
 	</section><!-- end of people section -->
@@ -262,9 +282,10 @@
 				</div>
 				
 				<div class="col-md-10 col-md-offset-1">
-					<h4>Thank you so much for your interest in our research! We rely on parents like you to help us answer our questions about children’s reasoning about the world. </h4>
+					<h4>Thank you so much for your interest in our research! Families like yours can help us answer questions about how children learn about language. </h4>
 					
-					<h4>If you are interested in participating in our research, please <a class='text-link' href= "mailto:callab.uchicago@gmail.com">email us</a> or call 773-834-9769. </h4> 
+					<h4>If you are interested in participating in our research here at the <a class='text-link' href='https://babylab.uchicago.edu/'>Center for Early Childhood Research</a> at the University of Chicago, please <a class="text-link" href="https://babylab.uchicago.edu/content/sign" target="_blank">click here to sign up!</a> <br><br> 
+					You can also reach out to us directly by <a class='text-link' href= "mailto:callab.uchicago@gmail.com" target="_blank">emailing us</a> or calling 773-834-9769. </h4> <br>
 
 					<br>
 					<p style="color:#efa221"> <em>How long do studies usually last? </em> </p>
@@ -290,6 +311,7 @@
 					<p style="color:#efa221"><em> Have more questions? </em>  &nbsp;
 					<a class='text-link' href="mailto:benmorris@uchicago.edu" style="color:#737373;"> Email us!</a> </p>
 					</p>
+					<br>
 					</div>
 			</div>
 		</div>
@@ -297,17 +319,18 @@
 
 	<!-- student info section starts here -->
 	<section class="students text-center" id="students">
-		<div class="container">
+		<div class="container" id="joinBody">
 			<div class="row">
 				<h2>Join our Lab!</h2>
-				<br> 
-				<div class="col-md-10 col-md-offset-1" style="background-color: #fff">
-				<h4> We are always looking for motivated, passionate students and researchers to join our team. Please <a class="text-link" href="mailto:benmorris@uchicago.edu">contact us</a> if you have any questions about our work!
-				<br> <br> <br> 
-				<em><strong> Undergraduate Opportunities: </strong></em> The Communication and Learning Lab has openings for undergraduates to gain research experience working as RAs. As a research assistant in CaLLab, you could be involved in research at every step of the process, from developing research questions and creating stimuli to recruiting subjects and testing participants. 
-				If you would like to hear more about working as an RA, please contact our lab manager Benjamin Morris (<a class="text-link" href="mailto:benmorris@uchicago.edu">benmorris [at] uchicago [dot] edu</a>).
-				<br> <br> <br>
-				<em> <strong>Interested in graduate study at the University of Chicago? </strong></em>  Visit the <a class="text-link" href="https://psychology.uchicago.edu/">Psychology Department page</a> for more information on graduate programs offered at the University of Chicago and the application process. Please contact <a class="text-link" href="mailto:yurovsky@uchicago.edu">Professor Yurovsky</a> if you are interested in pursuing graduate research in the Communication and Learning Lab. </h4></div>
+				<div id="joinContent" class="col-md-10 col-md-offset-1">
+					<h4> We are always looking for motivated, passionate students and researchers to join our team. Please <a class="text-link" href="mailto:benmorris@uchicago.edu">contact us</a> if you have any questions about our work!
+					<br> <br> <br> 
+					<em><strong> Undergraduate Opportunities: </strong></em> The Communication and Learning Lab has openings for undergraduates to gain research experience working as RAs. As a research assistant in CaLLab, you could be involved in research at every step of the process, from developing research questions and creating stimuli to recruiting subjects and testing participants. 
+					If you would like to hear more about working as an RA, please contact our lab manager Benjamin Morris (<a class="text-link" href="mailto:benmorris@uchicago.edu">benmorris [at] uchicago [dot] edu</a>).
+					<br> <br> <br>
+					<em> <strong>Interested in graduate study at the University of Chicago? </strong></em>  Visit the <a class="text-link" href="https://psychology.uchicago.edu/"  target="_blank">Psychology Department page</a> for more information on graduate programs offered at the University of Chicago and the application process. Please contact <a class="text-link" href="mailto:yurovsky@uchicago.edu">Professor Yurovsky</a> if you are interested in pursuing graduate research in the Communication and Learning Lab. </h4>
+
+				</div>
 			</div>
 		</div>
 	</section><!-- end of student info section -->
@@ -345,7 +368,7 @@
 						<div class="info-detail">
 							<ul><li><i class="fa fa-calendar"></i><span>Monday - Friday:</span> 9:00 AM to 5:00 PM</li></ul>
 							<ul><li><i class="fa fa-map-marker"></i><span>Address: </span>
-							<p> <a class="text-link" href="https://www.google.com/maps/dir//5848+S+University+Ave,+Chicago,+IL+60637/@41.788405,-87.6004707,17z/data=!4m16!1m7!3m6!1s0x880e2916308c0e93:0x7a98130c093acef3!2s5848+S+University+Ave,+Chicago,+IL+60637!3b1!8m2!3d41.788401!4d-87.598282!4m7!1m0!1m5!1m1!1s0x880e2916308c0e93:0x7a98130c093acef3!2m2!1d-87.598282!2d41.788401"> Department of Psychology <br>
+							<p> <a class="text-link" href="https://www.google.com/maps/dir//5848+S+University+Ave,+Chicago,+IL+60637/@41.788405,-87.6004707,17z/data=!4m16!1m7!3m6!1s0x880e2916308c0e93:0x7a98130c093acef3!2s5848+S+University+Ave,+Chicago,+IL+60637!3b1!8m2!3d41.788401!4d-87.598282!4m7!1m0!1m5!1m1!1s0x880e2916308c0e93:0x7a98130c093acef3!2m2!1d-87.598282!2d41.788401" target="_blank"> Department of Psychology <br>
 							5848 S. University Avenue<br>
 							Chicago, IL 60637</a></p></li></ul>
 							<ul><li><i class="fa fa-phone"></i><span>Phone:</span> (773) 834-9769</li></
@@ -378,13 +401,13 @@
 				<div class = "col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
 					<div class = "row">
 						<div class = "col-md-4 col-sm-4">
-							<img src="img/affiliates/logo.rgb.maroon.jpg" width="100%" alt="">
+							<a href="http://www.uchicago.edu/" target="_blank"> <img src="img/affiliates/logo.rgb.maroon.jpg" width="100%" alt=""> </a>
 						</div>
 						<div class = "col-md-4 col-sm-4">
-							<img src="img/affiliates/cecr_text.png" width="100%" alt="">
+							<a href="https://babylab.uchicago.edu/" target="_blank"><img src="img/affiliates/cecr_text.png" width="100%" alt=""></a>
 						</div>
 						<div class = "col-md-4 col-sm-4">
-							<img src="img/affiliates/socsci.png" width="100%">
+							<a href=https://socialsciences.uchicago.edu/ target="_blank"><img src="img/affiliates/socsci.png" width="100%"></a>
 						</div>
 					</div>
 				</div>
@@ -397,7 +420,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 footer-para">
-					<p>CaLLab logo designed by <a href="http://www.jimmycourtice.com">Jimmy Courtice</a></p>
+					<p>CaLLab logo designed by <a href="http://www.jimmycourtice.com" target="_blank">Jimmy Courtice</a></p>
 				</div>
 			</div>
 		</div>
@@ -411,5 +434,6 @@
 	<script src="js/smoothscroll.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/custom.js"></script>
+	<script src="js/index.js"></script>
 </body>
 </html>
