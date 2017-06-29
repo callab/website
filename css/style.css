@@ -571,12 +571,9 @@ li a.active {
     /*padding-top: 50px;*/
     /*padding-bottom: 0px;*/
     background: #faee5f;
-    padding: 60px 0 50px 0;
+    padding: 0px 0px 50px 0px;
 }
 
-#joinBody {
-    background: #fff;
-}
 
 #joinContent {
    top:-20px;
@@ -584,7 +581,7 @@ li a.active {
 
 .students:target{padding-top: 0px;}
 
-.gradient-pattern {
+/*.gradient-pattern {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -603,8 +600,8 @@ li a.active {
   background-clip: border-box;
   -webkit-background-size: 64px 128px;
   background-size: 64px 128px;
-}
-.gradient-pattern2 {
+}*/
+/*.gradient-pattern2 {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -623,7 +620,7 @@ li a.active {
   background-clip: border-box;
   -webkit-background-size: 20px 10px;
   background-size: 20px 10px;
-}
+}*/
 .students h2 {
     padding-top: 30px;
     padding-bottom: 20px;
@@ -634,7 +631,17 @@ li a.active {
 .students h4 {
     font-size: 24px;
     color: #737373;
-    margin: 60px  40px 60px 40px !important;
+    margin: 40px  0px 60px 0px ;
+}
+
+
+
+.parents p {
+    font-size: 16px;
+    text-align: left;
+    color: #737373;
+    /*margin-left: 125px;*/
+    /*margin-right: 50px;*/
 }
 
 
