@@ -9,7 +9,6 @@ function ageMe(person) {
 //smooth scrolling function
 $(function() {
        $("a[href*='#']:not([href='#'])").click(function() {
-          console.log(this.href)
           if(!this.href.includes('carousel')) {
              if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
                  var target = $(this.hash);
