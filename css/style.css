@@ -684,11 +684,15 @@ li a.active {
     position: relative;
 }
 .person img {
+    /*border: dashed 2px green;*/
     width: 182px;
-    /*height: 182px;*/
+    height: auto;
     position: relative;
+    overflow: hidden;
 }
 .person-detail {
+    /*border: dotted 4px orange;*/
+    overflow: scroll;
     padding: 0px;
     background: #ffffff;
     width: 700px;
@@ -702,6 +706,10 @@ li a.active {
     -o-transition: all .7s ease 0s;
     -ms-transition: all .7s ease 0s;
 }
+.person-detail p {
+    /*margin-bottom: 10px;*/
+}
+
 .arrow-top {
     position: absolute;
     width: 20px;
@@ -738,6 +746,74 @@ li a.active {
     -o-transition: all .7s ease 0s;
     -ms-transition: all .7s ease 0s;
 }
+.title-heading h3 {
+    margin: 0px;
+    margin-bottom: 30px;
+    font-size: 35px !important;
+    margin-left: 9%;
+    font-weight: bold;
+    color: #d55127;
+    -webkit-transition: all .7s ease 0s;
+    -moz-transition: all .7s ease 0s;
+    -o-transition: all .7s ease 0s;
+    -ms-transition: all .7s ease 0s;
+}
+.lab-photo-container {
+    position: relative;
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+
+}
+.lab-photo {
+    margin-bottom: 30px;
+    opacity: 1;
+    /*display: block;*/
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+        /*clip: rect(0px,60px,200px,0px);*/
+
+    position: relative;
+        /*clip: rect(0px,60px,200px,0px);*/
+
+}
+.lab-photo-container:hover .lab-photo{
+    opacity: 0.4;
+}
+.lab-photo-container:hover .lab-photo-cover {
+  opacity: 1;
+}
+.lab-photo-cover {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+.lab-photo-text {
+  background-color: #d55127;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+/*.crop-parent-element {
+    position: relative;
+    overflow: hidden; ** Overflow to hide anything out of the size of the box **
+    width: 180px;
+    left: 85px;
+    border: solid 1px blue;
+}*/
+/*.crop-profile-pic  {
+    position: relative; ** position relative to place the img in center **
+    z-index: 3;
+    border: dotted 3px red;
+
+ }*/
+
 .person-detail h3 {
     margin: 0px;
     margin-bottom: 5px;
@@ -1238,7 +1314,7 @@ responsive area
     .person-detail {
         width: 375px;
         height: 150px;
-        overflow: scroll;
+        /*overflow: scroll;*/
         left: 80px;
     }
     .contact-caption {
@@ -1363,7 +1439,7 @@ responsive area
     .person-detail {
         width: 300px;
         height: 100px;
-        overflow: scroll;
+        /*overflow: scroll;*/
         left: 50px;
     }
     .map {
