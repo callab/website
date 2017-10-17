@@ -14,6 +14,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Cabin', sans-serif;
+    overflow-x: hidden;
 }
 li {
     list-style: none;
@@ -746,11 +747,13 @@ li a.active {
     -o-transition: all .7s ease 0s;
     -ms-transition: all .7s ease 0s;
 }
-.title-heading h3 {
-    margin: 0px;
+.title-heading {
+    /*margin: 0px;*/
     margin-bottom: 30px;
-    font-size: 35px !important;
-    margin-left: 9%;
+    font-size: 35px;
+    margin-left:11%;
+    /*margin-left:20px;*/
+    text-align: left;
     font-weight: bold;
     color: #d55127;
     -webkit-transition: all .7s ease 0s;
@@ -1153,6 +1156,11 @@ responsive area
     .map {
         width: 450px;
     }
+    .title-heading {
+        font-size: 25px;
+        margin-left:120px;
+    }
+
 }
 
 /* sm */
@@ -1233,6 +1241,10 @@ responsive area
         width: 500px;
         margin: auto;
         margin-bottom: 20px;
+    }
+    .title-heading {
+        font-size: 22px;
+        margin-left:100px;
     }
 }
 
@@ -1334,6 +1346,20 @@ responsive area
         margin: auto;
         margin-bottom: 30px;
     }
+    .title-heading {
+        font-size: 20px;
+    }
+    .lab-photo-container {
+        width:65%;
+    }
+    .lab-photo-text {
+      font-size: 14px;
+      padding: 12px 30px;
+    }
+    .person-detail h4 {
+        margin-bottom: 3px;
+        /*font-size: 12px;*/
+    }
 }
 
 /* XS Portrait */
@@ -1412,6 +1438,7 @@ responsive area
         font-size: 15px !important;
         margin-left: 40px;
         margin-right: 40px;
+        /*margin-top:-40px;*/
     }
     button {
         font-size: 12px !important;
@@ -1426,6 +1453,10 @@ responsive area
         margin-left: 40px;
         margin-right: 40px;
     }
+    .text-link-plain {
+        font-size: 14px;
+    }
+
     .single-member {
         /*left: 20px;*/
         margin-bottom: -40px;
@@ -1437,7 +1468,7 @@ responsive area
         position: relative;
     }
     .person-detail {
-        width: 300px;
+        width: 250px;
         height: 100px;
         /*overflow: scroll;*/
         left: 50px;
@@ -1464,6 +1495,34 @@ responsive area
     .single-about-detail {
         margin: 0px 50px 0px 50px;
     }
+    .title-heading {
+        font-size: 18px;
+        margin-left: 9%;
+    }
+    .lab-photo-container {
+        width:70%;
+    }
+    .lab-photo-text {
+      background-color: #d55127;
+      color: white;
+      font-size: 12px;
+      padding: 8px 15px;
+    }
+    .person-detail h3 {
+        margin-top: -10px;
+        font-size: 12px;
+        margin-bottom: 0px;
+    }
+    .person-detail h4 {
+        margin-bottom: 0px;
+    }
+    .about-details h3 {
+        font-size: 15px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 5px;
+        padding-bottom: 5px;
+    }
 
-    html, body {height:100%;overflow:auto}
+    html, body {height:100%;}
 }
