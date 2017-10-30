@@ -13,6 +13,12 @@
 #site-wrapper {
     overflow-x: hidden;
 }
+.contact {
+    position:relative !important;
+}
+.parents {
+    position: relative !important;
+}
 
 body {
     margin: 0;
@@ -52,6 +58,7 @@ h4 {
 .indent{ 
     text-indent: 50px; 
 }
+
 .indent2{ 
     padding-left: 100px; 
 }
@@ -112,7 +119,8 @@ h4 {
     /*margin-bottom: 0;*/
     /*margin:auto;*/
     width: 950px;
-    margin-top: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     position: absolute;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -125,8 +133,8 @@ h4 {
     -ms-transition: all .5s ease 0s;
 }
 .callab-logo{
-    height: 80px;
-    margin-top:-20px;
+    height: 75px;
+    margin-top:-30px;
 }
 
 
@@ -544,19 +552,27 @@ li a.active {
 /*parents section*/
 
 .toyroom {
-    position: relative;
+    position: absolute;
     overflow: hidden;
 }
 
 #toyroom {
     height: 790px;
+    width: 100%;
+    left: 0px;
+    background: black;
+}
+#toyroom-img{
+    opacity: .35;
 }
 
 .parents {
-    position: absolute;
+    display:table;
+    position: relative;
+    overflow: hidden;
     width: 100%;
-    height: 790px;
-    margin-top: -790px;
+    /*height: 790px;*/
+    /*margin-top: -790px;*/
     left: 0;
     background: rgba(0, 0, 0, 0.51);
 }
@@ -566,6 +582,7 @@ li a.active {
     position: relative;
     background: #ffffff;
     margin-top: 60px;
+    margin-bottom: 60px;
 }
 .map:target{padding-top: 80px;}
 
@@ -600,7 +617,7 @@ li a.active {
     /*padding-top: 50px;*/
     /*padding-bottom: 0px;*/
     background: #faee5f;
-    padding: 0px 0px 50px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 
@@ -796,12 +813,13 @@ li a.active {
     position: relative;
     /*width: 970px;*/
     width: 85%;
-    height: 500px;
+    /*height: 500px;*/
+    height: auto;
     /*height: 70% !important;*/
     margin: auto;
     overflow: hidden;
     margin-top: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 .lab-photo {
     bottom: 50px;
@@ -827,7 +845,7 @@ li a.active {
   transition: .5s ease;
   opacity: 0;
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%)
@@ -877,7 +895,7 @@ li a.active {
     margin-top: 0px;
     margin-left: 20px;
     margin-right: 20px;
-    font-size: 14px;
+    font-size: 15px;
     color: #737373;
     font-family: 'Open Sans', sans-serif;
     -webkit-transition: all .7s ease 0s;
@@ -1224,7 +1242,7 @@ responsive area
         font-size: 26px;
     }
     .person-detail p {
-        font-size: 12px;
+        font-size: 15px;
     }
     .single-member {
         /*width: 750px;*/
@@ -1239,6 +1257,9 @@ responsive area
         width: 650px;
         left:-90px;
     }
+    .parents-caption {
+        margin-bottom:50px;
+    }
     .map {
         width: 450px;
     }
@@ -1248,6 +1269,7 @@ responsive area
     }
     .lab-photo-container {
         width: 88%;
+        margin-bottom: 40px;
     }
 
 }
@@ -1257,18 +1279,6 @@ responsive area
 @media (min-width: 768px) and (max-width: 991px) {
     #carouselHacked {
         margin-top:-35px;
-    }
-    #toyroom {
-        height: 700px;
-    }
-
-    .parents {
-        position: absolute;
-        width: 100%;
-        height: 700px;
-        margin-top: -700px;
-        left: 0;
-        background: rgba(0, 0, 0, 0.51);
     }
     .parents p {
         font-size:14px !important;
@@ -1286,15 +1296,16 @@ responsive area
         width: 690px;
     }
     .callab-logo {
-        height: 60px;
-        margin-top:-15px;
+        height: 45px;
+        margin-top:-18px;
+        /*padding-bottom: 0;*/
     }
     ul.nav {
         margin: 0;
         padding: 0px;
     }
     .navbar-image {
-        margin-top: 10px;
+        margin-top: 0px;
         height: 65px;
     }
     .carousel-caption h1 {
@@ -1326,12 +1337,20 @@ responsive area
         /*width: 300px;*/
     }
     .single-member {
+        margin-bottom: 40px;
         /*margin: auto;*/
         /*left: 60px;*/
     }
+    .person-detail h3{
+        margin-top: -8px ;
+    }
+
     .person-detail {
         width: 550px;
         left: 110px;
+    }
+    .person-detail p {
+        font-size: 14px !important;
     }
     .contact-caption {
         margin-top: 50px !important;
@@ -1346,15 +1365,22 @@ responsive area
         margin-bottom: 20px;
     }
     .title-heading {
+        margin-bottom: 20px;
+        margin-top: 50px;
+        margin-left: 40px;
         font-size: 22px;
-        margin-left:100px;
     }
     .lab-photo {
         margin-top: 50px;
     }
     .lab-photo-container {
-        margin-bottom: -30px;
+        margin-top: -10px;
+        margin-bottom: 20px;
         width: 100%;
+        height: auto;
+    }
+    #lab-photo-office {
+        height: 300px !important;
     }
 }
 
@@ -1364,22 +1390,27 @@ responsive area
     #carouselHacked {
         margin-top:-40px
     }
-    .toyroom img{
-        width:175%;
+    #toyroom-img {
+        height: 1000px;
+        width: auto;
     }
-    
+
     #toyroom {
-        height: 795px;
-    }
-    .parents {
-        height: 795px;
-        margin-top: -795px;
+        height: 1000px;
+        width: auto;
     }
     .parents-caption {
-        margin-top:50px;
+        /*margin-top:50px;*/
+        margin-left: 20px;
+        margin-right: 20px;
+        /*margin-bottom: 50px;*/
     }
-    .parents p {
-        font-size:15px !important;
+    .parents p, h4 {
+        font-size:14px !important;
+        margin: 10px 20px 0 20px;
+    }
+    .indent {
+        text-indent: 30px;
     }
     .people {
         /*background: #faee5f;*/
@@ -1392,8 +1423,10 @@ responsive area
     }
     .callab-logo{
         height:60px;
+        margin-top: 0px;
     }
     .navbar-default .navbar-nav>li>a {
+        top: -20px;
         font-size: 20px;
         left: 400px;
         background:#fff;
@@ -1413,6 +1446,9 @@ responsive area
     .navbar-image {
         margin-top: 10px;
         height: 60px;
+    }
+    #navbar-logo {
+        content: url("img/callab_logo.png");
     }
     .carousel-caption {
         /*margin-top: 110px;*/
@@ -1449,7 +1485,8 @@ responsive area
     .single-member {
         /*left: 5%;*/
         margin: auto;
-        margin-bottom: 20px;
+        /*margin-left: 30px;*/
+        margin-bottom: 10px;
     }
     .person img {
         width: 150px;
@@ -1487,13 +1524,20 @@ responsive area
     }
     .title-heading {
         font-size: 20px;
+        margin-bottom: 10px;
     }
     .lab-photo-container {
-        width:65%;
+        width:534px;
+        height: auto;
+        margin-left: 20px;
+        margin-bottom: 40px;
     }
     .lab-photo-text {
       font-size: 14px;
       padding: 12px 30px;
+    }
+    #lab-photo-office {
+        height: 300px !important;
     }
  
 
@@ -1506,20 +1550,23 @@ responsive area
     .toyroom img{
         width:auto;
     }
-    
-    #toyroom {
-        height: 950px;
+    .menu {
+        background: #fff !important;
+        z-index: 2;
     }
-    .parents {
-        height: 950px;
-        margin-top: -950px;
+    #toyroom {
+        height: 1200px;
+    }
+    #toyroom-img {
+        height: 1200px;
     }
     .parents-caption {
         margin-top:30px;
+        margin-left: 20px;
+        margin-right: 20px;
+        /*margin-bottom: 50px;*/
     }
-    .parents p {
-        font-size:14px !important;
-    }
+
     .top-header img.logo {
         margin: 10px 10px;
     }
@@ -1538,25 +1585,26 @@ responsive area
         height: 40px;
     }
     .navbar-default {
-        border-color: #fff;
-        margin-top: 10px;
+        /*border-color: #fff;*/
+        /*margin-top: 10px;*/
         /*right: 10%;*/
     }
     .callab-logo{
         height: 55px;
+        margin-top: 0;
     }
     .navbar-toggle{
+        z-index: 3;
         position: absolute;
         left: 50%;
         -webkit-transform: translateX(-50%);
-        transform: translateX(-50%)
+        transform: translateX(-50%);
     }
     .navbar-default .navbar-nav>li>a {
-        top: 45px;
-        font-size: 20px;
+        top: 35px;
         left: 400px;
         background:#fff;
-        opacity:.95;
+        /*opacity:.95;*/
         width: 200px;
     }
     .header-backup {
@@ -1653,17 +1701,22 @@ responsive area
     .footer p {
         font-size: 10px;
     }
+    .faq p{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .indent {
+        text-indent: 15px ;
+    }
     .single-about-detail {
         /*margin: 0px 50px 0px 50px;*/
     }
-    .title-heading {
-        font-size: 18px;
-        margin-left: 9%;
-    }
+
     .lab-photo-container {
         width:345px;
         height: auto;
         margin-left: 20px;
+        /*margin-top:-0px;*/
     }
     .lab-photo-text {
       background-color: #d55127;
@@ -1679,12 +1732,23 @@ responsive area
     .person-detail h4 {
         margin-bottom: 0px;
     }
+    .parents p, h4 {
+        font-size:14px !important;
+        margin: 10px 15px 0 15px;
+    }
+    .students h4{
+                font-size:14px !important;
+        margin: 10px 25px 0 25px !important;
+    }
     .about-details h3 {
         font-size: 15px;
         margin-left: 5px;
         margin-right: 5px;
         margin-top: 5px;
         padding-bottom: 5px;
+    }
+    #lab-photo-office {
+        height: 150px !important;
     }
 
     html, body{
