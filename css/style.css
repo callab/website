@@ -203,7 +203,7 @@ li a.active {
     font-size: 24px;
     color: #fff;
     padding-top: 0px !important;
-    margin-top: 0px !important;
+    margin-top: -2px !important;
     /*text-transform: uppercase;*/
     font-weight: bold;
     text-align: center;
@@ -251,12 +251,13 @@ li a.active {
 }
 
 .carousel-caption {
-    /*position: absolute;*/
-    align: center;
     background: #efa221;
-    /*width: 680px;*/
-    height: 50px;
-    left: 0%;
+    width: 515px;
+    height: 40px !important;
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);    
     line-height: 1;
     top: 1%;
     text-indent: 0px;
@@ -429,8 +430,8 @@ li a.active {
 }
 .single-about-detail:hover .about-details {
     background: #d55127;
-    
 }
+
 .single-about-detail:hover .pentagon-text h1 {
     color: #3a9dca;
 }
@@ -721,32 +722,42 @@ li a.active {
     margin-bottom: 45px;
 }
 .single-member {
+    /*border:black 2px dotted;*/
     /*margin: auto;*/
     /*margin-top: 40px;*/
     /*margin-bottom: 20px;*/
-    padding: 0;
-    height: 170px;
+    /*height: 170px;*/
+    /*width: auto;*/
     /*margin: 0 10px 50px 0;*/
-    position: relative;
+    /*position: relative;*/
     margin: auto;
-    margin-bottom: 60px;
+    margin-left: 60px;
+    margin-bottom: 20px;
+    /*float: left;*/
+    display:inline-block;
+    /*white-space:nowrap;*/
+
 }
 .person img {
     /*border: dashed 2px green;*/
-    width: 182px;
-    left: -5px;
+    width: 190px;
+    left: -80px;
     height: auto;
     position: relative;
     overflow: hidden;
+    /*z-index: 1;*/
+    display:inline-block;
+
 }
+
 .person-detail {
     /*border: dotted 4px orange;*/
-    overflow: scroll;
-    padding: 0px;
+    /*overflow: scroll;*/
+    /*padding: 0px;*/
     background: #ffffff;
-    width: 795px;
-    height: 182px;
-    left: -130px;
+    width: 800px;
+    height: 190px;
+    left: -175px;
     position: relative;
     text-align: left;
     transition: all .7s ease 0s;
@@ -754,34 +765,19 @@ li a.active {
     -moz-transition: all .7s ease 0s;
     -o-transition: all .7s ease 0s;
     -ms-transition: all .7s ease 0s;
+    display: inline-block;
 }
 .person-detail p {
     /*margin-bottom: 10px;*/
 }
 
-.arrow-top {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: #3ba0cc;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    bottom: -10px;
-    left: 46%;
-    transition: all .7s ease 0s;
-    -webkit-transition: all .7s ease 0s;
-    -moz-transition: all .7s ease 0s;
-    -o-transition: all .7s ease 0s;
-    -ms-transition: all .7s ease 0s;
-}
+
 .arrow-bottom {
+    z-index: 2 !important;
     position: relative;
     width: 20px;
     height: 20px;
-    background: #ffffff;
+    background: #fff;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
@@ -809,10 +805,65 @@ li a.active {
     -o-transition: all .7s ease 0s;
     -ms-transition: all .7s ease 0s;
 }
+
+
+
+.person-detail h3 {
+    margin: 0px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    margin-left: 20px;
+    color: #d55127;
+    -webkit-transition: all .7s ease 0s;
+    -moz-transition: all .7s ease 0s;
+    -o-transition: all .7s ease 0s;
+    -ms-transition: all .7s ease 0s;
+}
+.person-detail h4 {
+    font-size: 18px;
+    margin-left: 50px;
+    margin-bottom: 5px;
+    color: #737373;
+    -webkit-transition: all .7s ease 0s;
+    -moz-transition: all .7s ease 0s;
+    -o-transition: all .7s ease 0s;
+    -ms-transition: all .7s ease 0s;
+}
+.person-detail p {
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 15px;
+    color: #737373;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-transition: all .7s ease 0s;
+    -moz-transition: all .7s ease 0s;
+    -o-transition: all .7s ease 0s;
+    -ms-transition: all .7s ease 0s;
+}
+.single-member:hover .person-detail{
+    background: #737373;
+}
+.single-member:hover p{
+    color: #fff;
+}
+.single-member:hover h3{
+    color: #fff;
+}
+.single-member:hover h4{
+    color: #fff;
+}
+.single-member:hover .arrow-top {
+    background: #2a2a2a;
+}
+.single-member:hover .arrow-bottom {
+    background: #737373;
+}
+
 .lab-photo-container {
     position: relative;
     /*width: 970px;*/
-    width: 85%;
+    width: 87%;
     /*height: 500px;*/
     height: auto;
     /*height: 70% !important;*/
@@ -855,71 +906,6 @@ li a.active {
   color: white;
   font-size: 16px;
   padding: 16px 32px;
-}
-/*.crop-parent-element {
-    position: relative;
-    overflow: hidden; ** Overflow to hide anything out of the size of the box **
-    width: 180px;
-    left: 85px;
-    border: solid 1px blue;
-}*/
-/*.crop-profile-pic  {
-    position: relative; ** position relative to place the img in center **
-    z-index: 3;
-    border: dotted 3px red;
-
- }*/
-
-.person-detail h3 {
-    margin: 0px;
-    margin-bottom: 5px;
-    font-size: 30px;
-    margin-left: 20px;
-    color: #d55127;
-    -webkit-transition: all .7s ease 0s;
-    -moz-transition: all .7s ease 0s;
-    -o-transition: all .7s ease 0s;
-    -ms-transition: all .7s ease 0s;
-}
-.person-detail h4 {
-    font-size: 18px;
-    margin-left: 50px;
-    margin-bottom: 5px;
-    color: #737373;
-    -webkit-transition: all .7s ease 0s;
-    -moz-transition: all .7s ease 0s;
-    -o-transition: all .7s ease 0s;
-    -ms-transition: all .7s ease 0s;
-}
-.person-detail p {
-    margin-top: 0px;
-    margin-left: 20px;
-    margin-right: 20px;
-    font-size: 15px;
-    color: #737373;
-    font-family: 'Open Sans', sans-serif;
-    -webkit-transition: all .7s ease 0s;
-    -moz-transition: all .7s ease 0s;
-    -o-transition: all .7s ease 0s;
-    -ms-transition: all .7s ease 0s;
-}
-.single-member:hover .person-detail {
-    background: #737373;
-}
-.single-member:hover .person-detail p{
-    color: #fff;
-}
-.single-member:hover .person-detail h3{
-    color: #fff;
-}
-.single-member:hover .person-detail h4{
-    color: #fff;
-}
-.single-member:hover .arrow-top {
-    background: #2a2a2a;
-}
-.single-member:hover .arrow-bottom {
-    background: #737373;
 }
 
 
@@ -1217,17 +1203,18 @@ responsive area
     .header-logo img {
         margin-top: 10px;
     }
-
     .carousel-caption h1 {
         font-size: 120px;
     }
     .carousel-caption p {
         font-size: 23px;
+        margin-top: 2px !important;
     }
-    .carousel-caption button {
-        width: 215px;
-        height: 55px;
+    .carousel-caption  {
+        width: 550px;
+        height: 45px;
         font-size: 26px;
+
     }
     h2 {
         font-size: 40px !important;
@@ -1246,16 +1233,16 @@ responsive area
     }
     .single-member {
         /*width: 750px;*/
-        /*margin: auto;*/
+        margin-left: 20px;
         /*margin-bottom: 40px;*/
 
     }
     .person img{
-        left: 0px;
+        left: -30px;
     }
     .person-detail {
         width: 650px;
-        left:-90px;
+        left:-110px;
     }
     .parents-caption {
         margin-bottom:50px;
@@ -1308,11 +1295,13 @@ responsive area
         margin-top: 0px;
         height: 65px;
     }
+
     .carousel-caption h1 {
         font-size: 20px;
     }
     .carousel-caption p {
-        font-size: 20px;
+        margin: -5px 0px 5px 0px !important;
+        font-size: 19px !important;
     }
     .carousel-caption button {
         width: 180px;
@@ -1337,7 +1326,9 @@ responsive area
         /*width: 300px;*/
     }
     .single-member {
-        margin-bottom: 40px;
+        /*border: 2px black solid;*/
+        /*margin-bottom: 10px;*/
+        margin-left: 0px;
         /*margin: auto;*/
         /*left: 60px;*/
     }
@@ -1346,8 +1337,11 @@ responsive area
     }
 
     .person-detail {
-        width: 550px;
-        left: 110px;
+        width: 540px;
+        left: -80px;
+    }
+    .person img{
+        left: -10px;
     }
     .person-detail p {
         font-size: 14px !important;
@@ -1366,7 +1360,7 @@ responsive area
     }
     .title-heading {
         margin-bottom: 20px;
-        margin-top: 50px;
+        margin-top: 20px;
         margin-left: 40px;
         font-size: 22px;
     }
@@ -1453,13 +1447,12 @@ responsive area
     .carousel-caption {
         /*margin-top: 110px;*/
         font-size: 14px !important;
-        width:70%;
-        height: 55px;
-        left:15%;
+        width:300px;
+        height: 55px !important;
     }
     .carousel-caption p {
-        margin-top: -10px !important;
-        font-size: 25px;
+        margin: -10px 0px 5px 0px !important;
+        font-size: 18px !important;
     }
 /*    .carousel-caption button {
         width: 160px;
@@ -1483,22 +1476,26 @@ responsive area
         font-size: 12px !important;
     }
     .single-member {
+        /*border: 2px black solid;*/
         /*left: 5%;*/
-        margin: auto;
-        /*margin-left: 30px;*/
-        margin-bottom: 10px;
+        /*margin: auto;*/
+        margin-left: 0px;
+        margin-bottom: 20px;
+        width: 475px;
+
     }
     .person img {
         width: 150px;
-        left: 20px;
+        left: -25px;
         /*height: auto;*/
         /*position: relative;*/
     }
     .person-detail {
-        width: 400px;
+        /*border:black 2px dotted;*/
+        width: 350px;
         height: 150px;
-        /*overflow: scroll;*/
-        left: 100px;
+        overflow: scroll;
+        left: -40px;
     }
     .person-detail h4 {
         margin-bottom: 3px;
@@ -1525,12 +1522,13 @@ responsive area
     .title-heading {
         font-size: 20px;
         margin-bottom: 10px;
+        /*margin-left: 0px;*/
+        left: 80vw;
     }
     .lab-photo-container {
-        width:534px;
+        width:490px;
         height: auto;
-        margin-left: 20px;
-        margin-bottom: 40px;
+        /*margin-bottom: 40px;*/
     }
     .lab-photo-text {
       font-size: 14px;
@@ -1538,6 +1536,14 @@ responsive area
     }
     #lab-photo-office {
         height: 300px !important;
+    }
+    .students h4{
+        font-size:14px !important;
+        margin: 10px 25px 0 25px !important;
+    }
+    .about h4{
+        margin-left: 50px;
+        margin-right: 50px;
     }
  
 
@@ -1613,16 +1619,15 @@ responsive area
     .carousel-caption {
         /*margin-top: 110px;*/
         font-size: 14px !important;
-        width:70%;
-        height: 65px;
-        left:15%;
+        width:300px;
+        height: 50px !important;
     }
     .carousel-caption h1 {
         font-size: 75px;
     }
     .carousel-caption p {
-        margin: -15px 5px 0 5px !important;
-        font-size: 25px;
+        margin: -10px 0px 5px 0px !important;
+        font-size: 15px !important;
     }
     .carousel-control .glyphicon-chevron-right,
     .carousel-control .icon-next {
@@ -1664,35 +1669,74 @@ responsive area
     }
 
     .single-member {
+        /*border:2px solid black;*/
         /*left: 20px;*/
-        margin-bottom: -50px;
+        width: 300px;
+        margin-left:0px;
+        margin-bottom: 0px;
     }
     .person img {
-        width: 100px;
-        left: 20px;
+        width: 90px;
+        left: -30px;
         /*height: 182px;*/
         position: relative;
-        margin-left: auto;
+        /*margin-left: auto;*/
     }
     .person-detail {
-        width: 250px;
-        height: 100px;
-        /*overflow: scroll;*/
-        left: 80px;
+        width: 240px;
+        height: 90px;
+        overflow: scroll;
+        left: -40px;
         /*margin:auto;*/
+        margin-bottom: 10px;
+    }
+    .arrow-bottom {
+        opacity: 0;
+    }
+    .person-detail h3 {
+        margin-left: 10px !important;
+        margin-top: -13px !important;
+        font-size: 12px !important;
+        margin-bottom: 0px;
+    }
+    .person-detail a {
+        text-align: left;
+        font-size: 11px !important;
+                margin-bottom: 0px;
+
+    }
+    .person-detail p{
+        font-size: 10px !important;
+        margin-left:10px;
+    }
+    .parents p, h4 {
+        font-size:14px !important;
+        margin: 10px 15px 0 15px;
+    }
+    .title-heading {
+        font-size: 18px;
         margin-bottom: 10px;
     }
     .map {
         margin:auto;
         width: 350px;
         height: 200px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
+        margin-left: -10px;
     }
     .contact-caption {
-        margin-top: 70px;
+        margin-top: 80px;
+        margin-bottom: 40px;
+
     }
     .contact-info {
-        margin-right: 50px;
+        margin: 20px 50px 10px -10px;
+    }
+    .contact-info li{
+        font-size: 13px !important;
+    }
+    .contact-info h3{
+        display: none;
     }
     .footer a i.fa {
         font-size: 18px;
@@ -1713,9 +1757,9 @@ responsive area
     }
 
     .lab-photo-container {
-        width:345px;
+        width:330px;
         height: auto;
-        margin-left: 20px;
+        margin-left: 0px;
         /*margin-top:-0px;*/
     }
     .lab-photo-text {
@@ -1724,20 +1768,9 @@ responsive area
       font-size: 12px;
       padding: 8px 15px;
     }
-    .person-detail h3 {
-        margin-top: -10px;
-        font-size: 12px;
-        margin-bottom: 0px;
-    }
-    .person-detail h4 {
-        margin-bottom: 0px;
-    }
-    .parents p, h4 {
-        font-size:14px !important;
-        margin: 10px 15px 0 15px;
-    }
+
     .students h4{
-                font-size:14px !important;
+        font-size:14px !important;
         margin: 10px 25px 0 25px !important;
     }
     .about-details h3 {
@@ -1749,6 +1782,9 @@ responsive area
     }
     #lab-photo-office {
         height: 150px !important;
+    }
+    .about h4{
+        margin-left: 20px;
     }
 
     html, body{
