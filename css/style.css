@@ -291,7 +291,7 @@ li a.active {
 
     font-size: 18px;
     padding: 5px;
-    background: #fff;
+    background-color:transparent;
     border-radius: 50%;
     color: #737373;
     opacity: .5;
@@ -302,7 +302,7 @@ li a.active {
 .carousel-control .icon-next {
     font-size: 18px;
     padding: 5px;
-    background: #fff;
+    background-color:transparent;
     border-radius: 50%;
     opacity: .5;
     color: #737373;

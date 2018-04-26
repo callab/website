@@ -2,7 +2,7 @@ jQuery(document).ready(function () {
 
 
     $('#carouselHacked').carousel();
-
+  $('#carousel2').carousel();
     //this code is for the gmap
     var map = new GMaps({
         el: '#map',
