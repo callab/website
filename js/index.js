@@ -24,6 +24,3 @@ $(function() {
        });
    })
 
-
-// var acc = document.getElementsByClassName("accordian")
-
